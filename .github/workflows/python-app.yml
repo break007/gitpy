@@ -31,5 +31,5 @@ jobs:
     - name: run mian.py
       run: python main.py
       env:
-        email:${{secrets.EMAIL}}
-        passwd:${{secrets.passwd}}
+        email: ${{secrets.EMAIL}}
+        passwd: ${{secrets.passwd}}
