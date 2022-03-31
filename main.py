@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-03-31 15:27:34
-LastEditTime: 2022-03-31 15:50:52
+LastEditTime: 2022-03-31 16:19:13
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \gitpy\main.py
@@ -30,7 +30,7 @@ headers = {
     "keep-alive",
     "accept-language":
     "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
-    # "Cookie":"cf_clearance=j8wQ0hx97XKSP.2CIaVflu5f8sYA6h35k_KxiNpScmI-1648541841-0-150; uid=707752; email=344267112%40qq.com; key=1d0f52dbcb22dd167724a38f71d44723c5310f41a7cc1; ip=af6dbff282f3db3bfe384eeb16787877; expire_in=1651306713",
+    # "Cookie":"cf_clearance=j8wQ0hx97XKSP.12CIaVflu5f8sYA6h35k_KxiNpScmI-1648541841-0-150; uid=707752; email=344267112%40qq.com; key=1d0f52dbcb22dd167724a38f71d44723c5310f41a7cc1; ip=af6dbff282f3db3bfe384eeb16787877; expire_in=1651306713",
     "authority":
     "ggok.xyz"
 }
