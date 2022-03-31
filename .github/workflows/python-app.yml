@@ -30,3 +30,6 @@ jobs:
         pip install -r requirements.txt
     - name: run mian.py
       run: python main.py
+      env:
+        email:${{secrets.EMAIL}}
+        passwd:${{secrets.passwd}}
