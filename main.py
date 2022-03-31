@@ -11,10 +11,12 @@ import os
 from time import sleep
 import requests
 import json
-
+import urllib3
 email = os.environ.get("email")
 passwd = os.environ.get("passwd")
 s = requests.session()
+urllib3.disable_warnings()
+
 
 headers = {
     "content-type":
