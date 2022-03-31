@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-03-31 15:27:34
-LastEditTime: 2022-03-31 16:46:02
+LastEditTime: 2022-03-31 16:53:01
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \gitpy\main.py
@@ -40,7 +40,7 @@ def login():
     for i in range(5):
         sleep(1)
         try:
-            res = s.post("https://ggok.xyz/auth/login",
+            res = s.post("https://q88q.cyou/auth/login",
                          data={
                              "email": email,
                              "passwd": passwd
