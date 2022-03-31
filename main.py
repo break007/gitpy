@@ -1,7 +1,7 @@
 '''
 Author: your name
 Date: 2022-03-31 15:27:34
-LastEditTime: 2022-03-31 16:19:13
+LastEditTime: 2022-03-31 16:46:02
 LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \gitpy\main.py
@@ -47,13 +47,12 @@ def login():
                          },
                          headers=headers,
                          verify=False)
-            print(res.content)
             data = json.loads(res.content)
             print(data)
             break
         except Exception as e:
             print(e)
-            print("登录异常，正在尝试第{}次".format(i + 1))
+            print("登录异常，正在尝试第{}次:{}".format(i + 1, e))
 
 
 login()
