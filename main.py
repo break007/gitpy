@@ -12,6 +12,8 @@ from time import sleep
 import requests
 import json
 import urllib3
+
+print("q88q checkin program")
 email = os.environ.get("email")
 passwd = os.environ.get("passwd")
 s = requests.session()
@@ -22,9 +24,9 @@ headers = {
     "content-type":
     "application/x-www-form-urlencoded; charset=UTF-8",
     "origin":
-    "https://ggok.xyz",
+    "https://q88q.cyou",
     "referer":
-    "https://ggok.xyz/auth/login",
+    "https://q88q.cyou/auth/login",
     "user-agent":
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
     " Chrome/99.0.4844.74 Safari/537.36 Edg/99.0.1150.46",
