@@ -12,6 +12,7 @@ from time import sleep
 import requests
 import json
 import urllib3
+from notify import Notify
 
 print("q88q checkin program")
 email = os.environ.get("email")
@@ -19,7 +20,7 @@ passwd = os.environ.get("passwd")
 s = requests.session()
 urllib3.disable_warnings()
 
-
+notify = Notify()
 headers = {
     "content-type":
     "application/x-www-form-urlencoded; charset=UTF-8",
@@ -38,7 +39,8 @@ headers = {
     "ggok.xyz"
 }
 
-ran=4
+ran = 4
+
 
 def login():
     for i in range(ran):
@@ -53,6 +55,7 @@ def login():
                          verify=False)
             data = json.loads(res.content)
             print(data)
+            notify.send(data["msg"])
             break
         except Exception as e:
             print(e)
@@ -69,6 +72,7 @@ def check_in():
                          verify=False)
             data = json.loads(res.content)
             print(data)
+            notify.send(data["msg"])
             break
         except Exception as e:
             print(e)
