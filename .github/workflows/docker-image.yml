@@ -1,0 +1,24 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        name: Build image job
+        steps:
+            - name: Checkout master
+              uses: actions/checkout@master
+            - name: Build and publish image
+              uses: ilteoood/docker_buildx@master
+              with:
+                publish: true
+                imageName: q88q
+                dockerHubUser: ${{secrets.DOCKER_USERNAME}}
+                dockerHubPassword: ${{secrets.DOCKERPASSWORD}}
+                platform: linux/amd64,linux/arm64,linux/arm/v7
+    
